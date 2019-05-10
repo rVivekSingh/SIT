@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Registration Form </title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/test.png" type="image/png" sizes="16x16"/>
+<!-- Meta tag Keywords -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/bootstrap.min.js""></script>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+<!-- js -->
+<!-- //js -->
+
+</head>
+<body>
+<img src="images/test.png" alt="Smiley face" height="50" width="80"/>
+	<!-- banner --> 
+<div class="video"> 
+	<div class="center-container">
+	    <div class="w3ls-agileinfo">
+			<h1> Course Registration Form </h1>	
+		</div>
+		 <div class="bg-agile">
+			<h2>Softnet Computer Academy</h2>
+			<div class="login-form">	
+				<form action="register" method="post">
+					<input type="text"  name="StudentName" placeholder="Student Full Name" required />
+					<input type="text"  name="FatherName" placeholder="Father's Name" required/>
+					<input type="text"  name="phone" placeholder="Mobile Number" required/>
+					<input type="email"  name="email" placeholder="Enter Email ID" required />
+					<input type="text"  name="City" placeholder="City" required />
+					<input type="text"  name="Zip/postal code" placeholder="Zip/postal code" required= />
+					<div class="left-w3-agile">
+						<select class="selectClass" required id="multiselect" multiple="multiple" name="courses">
+							<option selected disabled="disabled">Select Course</option>
+							<option value="DCA">DCA</option>
+							<option value="ADCA">ADCA</option>
+							<option value="Tally">Tally</option>
+							<option value="DTP">DTP</option>
+							<option value="C Programming">C Programming</option>
+							<option value="C++">C++</option>
+							<option value="CCC">CCC</option>
+							<option value="BCC">BCC</option>
+							<option value="CFA">CFA</option>
+							<option value=DFA>DFA</option>
+							<option value="DDTP">DDTP</option>
+							<option value="DWD">DWD</option>
+							<option value="DHN">DHN</option>
+							<option value="DOM">DOM</option>
+						</select>
+					</div>
+					<input type="submit" value="Submit"/>
+				</form>	
+			</div>	
+		</div>
+	<!-- //banner --> 
+	 <!--copyright-->
+		<div class="copy w3ls">
+		    <p>&copy; 2018 Course Registration Form . All Rights Reserved  | Created by Vivek Singh</p>
+	    </div>
+	<!--//copyright-->
+	</div>	
+</div>	
+</body>
+<style>
+.multiselect-container {
+        width: 100% !important;
+    }
+.selectClass{
+ width: 400px;
+ color:white;
+ background: transparent;
+}
+</style>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#multiselect').multiselect({
+            buttonWidth: '400px'
+        });
+    });
+</script>
+</html>
